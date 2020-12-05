@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-import { string2buffer } from './util'
-import { TYPE, VERSION } from './const'
+import { string2buffer } from '../util'
+import { TYPE, VERSION } from '../const'
 export default class WriteBufferStream {
   constructor () {
     /**

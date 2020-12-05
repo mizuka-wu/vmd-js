@@ -1,6 +1,6 @@
 import { MODEL_NAME_LENGTH, VERSION_BUFFER_LENGTH, VERSION } from './const'
 import ReadBufferStream from './stream/ReadBufferStream'
-import WriteBufferStream from './WriteBufferStream'
+import WriteBufferStream from './stream/WriteBufferStream'
 import BoneFrame from './frame/BoneFrame'
 import CameraFrame from './frame/CameraFrame'
 import LightFrame from './frame/LightFrame'

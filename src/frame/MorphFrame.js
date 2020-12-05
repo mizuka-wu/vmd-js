@@ -29,7 +29,7 @@ export default class MorphFrame {
 
   /**
    * 将本身数据写入stream
-   * @param {import('../WriteBufferStream').default} stream
+   * @param {import('../stream/WriteBufferStream').default} stream
    */
   writeBuffer (stream) {
     if (!stream) {
