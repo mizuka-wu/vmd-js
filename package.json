@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Read and edit mmd's vmd file",
   "main": "dist/vmd.min.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mizuka-wu/vmd-js.git"
+  },
   "files": [
     "src/*",
     "dist/*"
