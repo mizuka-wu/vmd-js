@@ -14,9 +14,6 @@ export const MODEL_NAME_LENGTH = {
   [VERSION.V2]: 20
 }
 
-export const INT_LENGTH = 4
-export const FLOAT_LENGTH = 4
-
 export const TYPE = {
   int8_t: Int8Array,
   uint8_t: Uint8Array,
