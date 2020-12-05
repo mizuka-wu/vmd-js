@@ -1,7 +1,7 @@
 import resolve from '@rollup/plugin-node-resolve'
 import common from '@rollup/plugin-commonjs'
 import json from '@rollup/plugin-json'
-// import buble from '@rollup/plugin-buble'
+import babel from 'rollup-plugin-babel'
 import nodePolyfills from 'rollup-plugin-node-polyfills'
 import { terser } from 'rollup-plugin-terser'
 
@@ -26,7 +26,7 @@ export default {
     nodePolyfills(),
     json(),
     common(),
-    resolve()
-    // buble()
+    resolve(),
+    babel()
   ]
 }
