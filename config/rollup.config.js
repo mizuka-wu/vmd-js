@@ -1,8 +1,9 @@
 export default {
   input: 'src/index.js',
   output: {
+    name: 'Vmd',
     file: 'dist/vmd.js',
-    format: 'cjs',
+    format: 'umd',
     external: ['shiftjis']
   }
 }
