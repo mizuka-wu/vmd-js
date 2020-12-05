@@ -1,5 +1,5 @@
-import { buffer2string } from './util'
-import { TYPE } from './const'
+import { buffer2string } from '../util'
+import { TYPE } from '../const'
 export default class ReadBufferStream {
   /**
    * arrayBuffer

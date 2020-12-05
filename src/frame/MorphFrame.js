@@ -1,7 +1,7 @@
 
 export default class MorphFrame {
   /**
-   * @param {import('../ReadBufferStream').default} stream
+   * @param {import('../stream/ReadBufferStream').default} stream
    */
   constructor (stream) {
     /**
