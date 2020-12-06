@@ -1,5 +1,3 @@
-import resolve from '@rollup/plugin-node-resolve'
-import common from '@rollup/plugin-commonjs'
 import json from '@rollup/plugin-json'
 import babel from 'rollup-plugin-babel'
 import nodePolyfills from 'rollup-plugin-node-polyfills'
@@ -9,7 +7,10 @@ const output = {
   name: 'Vmd',
   file: 'dist/vmd.js',
   format: 'umd',
-  exports: 'named'
+  exports: 'named',
+  globals: {
+    shiftjis: 'shiftjis'
+  }
 }
 
 export default {
@@ -22,11 +23,10 @@ export default {
       plugins: [terser()]
     }
   ],
+  external: ['shiftjis'],
   plugins: [
     nodePolyfills(),
     json(),
-    common(),
-    resolve(),
     babel()
   ]
 }
