@@ -1,4 +1,4 @@
-import { Type } from '../const'
+import { Type, FrameType } from '../const'
 export default class ReadBufferStream {
     /**
      * 默认的buffer
@@ -10,7 +10,7 @@ export default class ReadBufferStream {
      * 读取关键帧数组
      * @param Constructor 
      */
-    readArrayByConstructor(Constructor: any): any[]
+    readArrayByConstructor(Constructor: FrameType): FrameType[]
 
     /**
      * 读取指定字节的数据

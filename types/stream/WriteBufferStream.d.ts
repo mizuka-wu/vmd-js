@@ -1,4 +1,4 @@
-import { Type } from '../const'
+import { Type, FrameType } from '../const'
 export default class WriteBufferStream {
     constructor()
 
@@ -8,7 +8,7 @@ export default class WriteBufferStream {
      * 写入数组
      * @param array 
      */
-    writeTypedFrameArray(array: any[]): WriteBufferStream
+    writeTypedFrameArray(array: FrameType[]): WriteBufferStream
 
 
     writeBytes(length?: number): WriteBufferStream
