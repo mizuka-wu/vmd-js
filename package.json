@@ -1,15 +1,17 @@
 {
   "name": "vmd.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Read and edit mmd's vmd file",
   "main": "dist/vmd.min.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/mizuka-wu/vmd-js.git"
   },
+  "typings": "types/index.d.ts",
   "files": [
     "src/*",
-    "dist/*"
+    "dist/*",
+    "types/*"
   ],
   "scripts": {
     "build": "rollup -c config/rollup.config.js",
@@ -34,6 +36,7 @@
     "@babel/preset-env": "^7.12.7",
     "@rollup/plugin-json": "^4.1.0",
     "babel-preset-es2015-rollup": "^3.0.0",
+    "dts-bundle-generator": "^5.5.0",
     "eslint": "^7.15.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
